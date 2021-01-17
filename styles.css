@@ -1,142 +1,274 @@
-  body,
-  html {
-    height: 100%;
-    margin: 0;
-    background-image: url("https://images.unsplash.com/photo-1532892939738-86e29515dc9e?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1350&q=80");
-    height: 100%;
-    background-position: center;
-    background-size: cover;
-    font-family: "Courier New", Courier, monospace;
-  }
-  .navbar {
-    overflow: hidden;
-    background: rgb(2, 0, 36);
-    background: linear-gradient(
-      90deg,
-      rgba(2, 0, 36, 1) 0%,
-      rgba(9, 9, 121, 1) 35%,
-      rgba(0, 212, 255, 1) 100%
-    );
-    position: fixed;
-    top: 0;
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-  }
+body,
+html {
+  height: 100%;
+  margin: 0;
+  background-image: url("https://images.unsplash.com/photo-1532892939738-86e29515dc9e?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1350&q=80");
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  font-family: "Courier New", Courier, monospace;
+}
+.navbar {
+  overflow: hidden;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(9, 9, 121, 1) 35%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  position: fixed;
+  top: 0;
+  width: 1720px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 0px 100px 0px 100px;
+}
 
-  .navbar a {
-    color: #f2f2f2;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-  }
+.navbar a {
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
 
-  .navbar a:hover {
-    background: #ddd;
-    color: black;
-  }
+.navbar a:hover {
+  background: #ddd;
+  color: black;
+}
 
-  .main {
-    padding: 16px;
-    margin-top: 30px;
-    /* height: 100%; */
-    text-align: center;
-  }
-  .main h1 {
-    color: #064AA4;
-    font-weight: bolder;
-    font-size: 70px;
-  }
-  .main h2 {
-    color: black;
-    font-size: 20px;
-  }
-  .button {
-    background-color: #072e92;
-    border: white;
-    color: white;
-    padding: 20px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
-  }
+.main {
+  padding: 16px;
+  margin-top: 30px;
+  text-align: center;
+}
+.main h1 {
+  color: #064aa4;
+  font-weight: bolder;
+  font-size: 70px;
+}
+.main h2 {
+  color: black;
+  font-size: 20px;
+}
+.button {
+  background-color: #072e92;
+  border: white;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
 
-  .button1 {
-    border-radius: 12px;
-  }
-  .button2 {
-    border-radius: 12px;
-    margin-top: 100px;
-    align-self: center;
-    background-color: #0390d2;
-    border: white;
-    color: white;
-    padding: 15px;
-    text-align: center;
-    text-decoration: none;
-    font-size: 16px;
-    cursor: pointer;
-    display: inline;
-    margin-left: 100px
-  }
+#copyButton {
+  border-radius: 12px;
+  align-self: center;
+  background-color: #0390d2;
+  border: white;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  cursor: pointer;
+  padding: 7px;
+  margin-bottom: 10px;
+  display: inline;
+}
+#copyButton2 {
+  border-radius: 12px;
+  align-self: center;
+  background-color: #072e92;
+  border: white;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  margin-bottom: 10px;
 
-  .sub {
-    height: 500px;
-    width: 900px;
-    background: rgb(2, 0, 36);
-    background: linear-gradient(
-      90deg,
-      rgba(2, 0, 36, 1) 0%,
-      rgba(9, 9, 121, 1) 35%,
-      rgba(0, 212, 255, 1) 100%
-    );
-    margin: auto;
-    margin-top: 150px;
-    padding: 30px;
-  }
-  input[type="text"] {
-    width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    box-sizing: border-box;
-    border-radius: 10px;
-  }
-  .main label {
-    color: white;
-    float: left;
-  }
-  .sub small {
-    color: white;
-    margin-top: 0%;
-    float: left;
-  }
-  .sub span {
-    color: black;
-    margin-top: -1%;
-  }
-  #phone {
-    clear: both;
-    margin-top: 10px;
-  }
-  #radio1 {
-    color: white;
-    float: left;
-    margin-top: 10px;
-    padding-left: 5px;
-  }
-  #radio2 {
-    color: white;
-    float: right;
-    margin-top: 10px;
-    padding-left: 5px;
-  }
-  #birth {
-    color: black;
-    float: right;
-    margin-top: 5px;
-  }
+  font-size: 16px;
+  cursor: pointer;
+
+  padding: 7px;
+  display: inline;
+}
+
+.button2 {
+  border-radius: 12px;
+  margin-top: 100px;
+  align-self: center;
+  background-color: #0390d2;
+  border: white;
+  color: white;
+  padding: 15px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  cursor: pointer;
+  display: inline;
+  margin-left: 100px;
+}
+
+.sub {
+  height: 500px;
+  width: 900px;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(9, 9, 121, 1) 35%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  margin: auto;
+  margin-top: 150px;
+  padding: 30px;
+}
+input[type="text"] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+.main label {
+  color: white;
+  float: left;
+}
+.sub small {
+  color: white;
+  margin-top: 0%;
+  float: left;
+}
+.sub span {
+  color: black;
+  margin-top: -1%;
+}
+#phone {
+  clear: both;
+  margin-top: 10px;
+}
+#radio1 {
+  color: white;
+  float: left;
+  margin-top: 10px;
+  padding-left: 5px;
+}
+#radio2 {
+  color: white;
+  float: right;
+  margin-top: 10px;
+  padding-left: 5px;
+}
+#birth {
+  color: black;
+  float: right;
+  margin-top: 5px;
+}
+
+.message {
+  background: rgb(34, 193, 195);
+  background: radial-gradient(
+    circle,
+    rgba(34, 193, 195, 1) 0%,
+    rgba(0, 23, 54, 1) 100%
+  );
+  color: #fff;
+  position: absolute;
+  top: -250px;
+  left: 0;
+  width: 100%;
+  height: 250px;
+  padding: 15px;
+  transition: top 300ms cubic-bezier(0.17, 0.04, 0.03, 0.94);
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.message h2 {
+  color: #fff;
+  float: left;
+  font-size: 50px;
+}
+.message h3 {
+  color: black;
+  float: left;
+  margin-left: -540px;
+  margin-top: 100px;
+  padding-left: -15px;
+}
+.message div {
+  color: white;
+}
+.flex-container {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.flex-container > div {
+  width: 300px;
+  margin: 10px;
+  /* text-align: center; */
+  line-height: auto;
+  font-size: 30px;
+  border-radius: 15px;
+}
+#blue {
+  background-color: #08086c;
+}
+#pink {
+  background-color: #00c6f6;
+}
+
+#toggle {
+  position: relative;
+  appearance: none;
+  cursor: pointer;
+  margin-left: -250px;
+}
+
+#toggle + label {
+  position: absolute;
+  cursor: pointer;
+  padding: 10px;
+  background: #171f70;
+  width: 250px;
+  border-radius: 10px;
+  padding: 8px 10px;
+  color: #fff;
+  line-height: 20px;
+  font-size: 12px;
+  font-weight: bold;
+  text-align: center;
+  -webkit-font-smoothing: antialiased;
+  cursor: pointer;
+  /* margin:20px 50px; */
+  transition: all 500ms ease;
+}
+#toggle + label:after {
+  content: "Click for More Offers for You";
+}
+
+.container {
+  transition: margin 300ms cubic-bezier(0.17, 0.04, 0.03, 0.94);
+  padding: 5em 3em;
+}
+
+#toggle:checked ~ .message {
+  top: 0;
+}
+
+#toggle:checked ~ .container {
+  margin-top: 250px;
+}
+
+#toggle:checked + label {
+  background: #00c6f6;
+}
+
+#toggle:checked + label:after {
+  content: "Close after you're discounted";
+}
